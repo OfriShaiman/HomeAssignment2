@@ -6,16 +6,16 @@
 
 
 :root{
-    --first-color: #260c41;
+    --first-color: #271041;
     --second-color: #efe9e9;
-    --third-color: #857f7f;
-    --five-color: #c4bfbf;
+    --third-color: #9a9595;
+    --five-color: #e37ac9;
     --black-color: #000000;
     --fourth-color: #e7dbdb;
     --dark-blue: #b0acac;
-    --bg-color: #734444;
-    --blur-element-color: #e7dbdb;
-    --body-color: linear-gradient(to left, rgb(248, 248, 248), #d3c1e6);
+    --bg-color: #4cc1bf;
+    --six-color: #ea7373;
+    --body-color: linear-gradient(to left, rgb(248, 248, 248), #eafaed);
     --shadow-1: 0 0 20px 10px rgb(101,41,240,0.5);
     --shadow-2: 0 0 20px 5px rgb(232,219,219);
 }
@@ -28,12 +28,13 @@ html {
 }
 body.dark-mode{
     --black-color: #f2f0f0;
-    --first-color: #bdbdbd;
+    --bg-color: #5ac3c1;
+    --first-color: #d6d1d1;
     --fourth-color: #131111;
-    --blur-element-color: #837979;
-    --third-color: #262424;
-    --five-color: #525153;
-    --body-color: linear-gradient(to left, #645e67, #0e0d0e);
+    --third-color: #343232;
+    --five-color: #cf71bc;
+    --six-color: #ea8787;
+    --body-color: linear-gradient(to left, #645e67, #262729);
     --shadow-1: 0 0 10px 0.5px rgba(255, 255, 255, 0.55);
 }
 body{
@@ -142,6 +143,10 @@ header{
     font-size: 24px;
     cursor: pointer;
 }
+.all-about{
+    display: block;
+    padding: 20px;
+}
 
   .about-h {
     padding: 0 5vw;
@@ -153,18 +158,24 @@ header{
 
    
 }
+.about-p0{
+    display:flex ;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--first-color);
+    font-size: 20px;
+    padding: 15px;
+}
 
 .about-p{
     display:flex ;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
-    padding: 20px;
     width: 100%;
     justify-content: center;
-    margin: 20px;
     color: var(--first-color);
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif; 
+    font-size: 18px; 
     margin: auto;
 
 }
@@ -192,7 +203,7 @@ header{
               content: '';
               height: 60px;
               width: 2px;
-              border-left: 2px solid #70d6ff;
+              border-left: 2px solid var(--first-color);
               transform: rotate(-45deg);
               position: absolute;
               right: 30px;
@@ -201,13 +212,13 @@ header{
           .Yearly-timeline .timeline:after{
               height: 20px;
               width: 20px;
-              border: 6px solid #70d6ff;
+              border: 6px solid var(--first-color);
               border-radius: 50%;
               right: 0;
           }   
           .Yearly-timeline .timeline-content{
               color: #555;
-              background: #70d6ff;
+              background: var(--first-color);
               text-align: center;
               min-height: 170px;
               padding: 30px 35px 35px;
@@ -262,24 +273,24 @@ header{
           .Yearly-timeline .timeline:nth-child(even) .timeline-content{ border-radius: 15px 15px 15px 0; }
           .Yearly-timeline .timeline:nth-child(4n+2):before,
           .Yearly-timeline .timeline:nth-child(4n+2):after{
-              border-color: #ff70a6;
+              border-color: var(--bg-color);
           }
           .Yearly-timeline .timeline:nth-child(4n+2) .timeline-content{
-              background: #ff70a6;
+              background: var(--bg-color);
           }
           .Yearly-timeline .timeline:nth-child(4n+3):before,
           .Yearly-timeline .timeline:nth-child(4n+3):after{
-              border-color: #ff9770;
+              border-color: var(--five-color);
           }
           .Yearly-timeline .timeline:nth-child(4n+3) .timeline-content{
-              background: #ff9770;
+              background: var(--five-color);
           }
           .Yearly-timeline .timeline:nth-child(4n+4):before,
           .Yearly-timeline .timeline:nth-child(4n+4):after{
-              border-color: #ffd670;
+              border-color: var(--six-color);
           }
           .Yearly-timeline .timeline:nth-child(4n+4) .timeline-content{
-              background:#ffd670;
+              background: var(--six-color);
           }
 
           
