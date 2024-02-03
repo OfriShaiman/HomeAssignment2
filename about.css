@@ -34,7 +34,7 @@ body.dark-mode{
     --third-color: #343232;
     --five-color: #cf71bc;
     --six-color: #ea8787;
-    --body-color: linear-gradient(to left, #645e67, #262729);
+    --body-color: linear-gradient(to left, #524e54, #0e0d0e);
     --shadow-1: 0 0 10px 0.5px rgba(255, 255, 255, 0.55);
 }
 body{
@@ -73,7 +73,7 @@ header{
 }
 
 .nav-list{
-    padding:0 30px ;
+    padding:0 15px ;
 }
 .nav-link{
   position:relative ;
@@ -292,7 +292,12 @@ header{
           .Yearly-timeline .timeline:nth-child(4n+4) .timeline-content{
               background: var(--six-color);
           }
-
+          .nav-link.current-page {
+            color: var(--first-color); 
+            font-weight: bold;
+        font-size: 30px;
+        box-shadow: var(--shadow-2);
+        border-radius: 10px;}
           
    
           @media screen and (max-width:700px){

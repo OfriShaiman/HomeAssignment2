@@ -12,3 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('dark-mode');
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.href;
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(link => {
+        if (link.href === currentPage) {
+            link.classList.add("current-page");
+        }
+    });
+});

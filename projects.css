@@ -201,7 +201,12 @@ header{
         max-height: 180px;
         object-fit: cover;
       }
-    
+      .nav-link.current-page {
+        color: var(--first-color); 
+        font-weight: bold;
+    font-size: 30px;
+    box-shadow: var(--shadow-2);
+    border-radius: 10px;}
 
 
     @media screen and (max-width:700px){
@@ -221,7 +226,6 @@ header{
         }
         .nav_menu.display-menu{
             display: flex;
-            display: block;
         
         }
         .nav_menu{
@@ -233,7 +237,7 @@ header{
             align-items: center;
             justify-content: center;
             background-color: rgba(119,98,98,0.8);
-            width: 150px;
+            width: 190px;
             padding: 40px 0;
             border-radius: 15px 0 15px 15px;
             box-shadow: -8px 8px 20px black;
