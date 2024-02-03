@@ -234,13 +234,7 @@ font-size: 25px;
 }
 
 .me-img{
-    height: 500px;
-    object-fit:cover;
-
-}
-.image{
-    width: 100%;
-    border-radius:70% 100% 100% 66% / 70% 100% 90% 46%; 
+    height: 100%;
     object-fit:cover;
 
 }
@@ -284,7 +278,20 @@ font-size: 25px;
     width: 100%;
 }
 
+.fade{
+    animation: fade ease 3s;
+    animation-iteration-count: 1;
+    width: 100%;
+    border-radius:70% 100% 90% 66% / 70% 100% 90% 46%; 
+    object-fit:cover;
+}
     
+@keyframes fade{
+0%{opacity: 0;}
+100%{opacity: 1;}
+}
+
+
 
 @media(max-width:986px){
     .responsive-portfolio-website
@@ -341,7 +348,7 @@ font-size: 25px;
     .me-social-icons{position: static; margin:50px 0 ;}
     .me-welcome{font-size: 30px;}
     .me-description{font-size: 20px;}
-    .me-image{height: 300px;}
+    .me-fade{height: 300px;}
     .contact-me{display: block;}
     .responsive-portfolio-website{display: flex;font-size: medium;height: -50px;}
     .me-welcome span{
